@@ -2,30 +2,37 @@
 Android ActiveNotification Sample
 ===================================
 
-The NotificationManager can tell you how many notifications your application is
-            currently showing. This sample demonstrates how to use this API that has been
-            introduced with Android M.
+Notification Groups and the Notification Manager can be used together to simplify
+how users experience notifications. This sample demonstrates how
+the NotificationManager can tell you how many notifications your
+application is currently showing. It also shows how to manage the
+notifications as a group and introduce a summary for the group, when
+supported by the platform.
 
 Introduction
 ------------
 
-The [NotificationManager][1] has become more powerful.
-            Starting with Android M, you can query it for the active notifications that
-            your app sent using the [notify][2] methods.
+Notifications can now be grouped.
 
-            This sample demonstrates simple use of this newly added functionality by
-            allowing a user to add notifications and then querying how many notifications
-            are currently being displayed via the [getActiveNotifications()][3] method.
+Starting with Android N, you can set notification groups for notifications
+and define a notification group summary.
 
-            [1]: https://developer.android.com/reference/android/app/NotificationManager.html
-            [2]: https://developer.android.com/reference/android/app/NotificationManager.html#notify(int, android.app.Notification)
-            [2]: https://developer.android.com/reference/android/app/NotificationManager.html#getActiveNotifications()
+Starting with Android M, you can query it for the active notifications that
+your app sent using the [notify][2] methods.
+
+This sample demonstrates simple use of these features by allowing a user 
+to add notifications and then query how many notifications
+are currently being displayed via the [getActiveNotifications()][3] method.
+
+[1]: https://developer.android.com/reference/android/app/NotificationManager.html
+[2]: https://developer.android.com/reference/android/app/NotificationManager.html#notify(int, android.app.Notification)
+[3]: https://developer.android.com/reference/android/app/NotificationManager.html#getActiveNotifications()
 
 Pre-requisites
 --------------
 
-- Android SDK v23
-- Android Build Tools v23.0.2
+- Android SDK Preview N
+- Android Build Tools v24.0.0 rc1
 - Android Support Repository
 
 Screenshots
@@ -54,7 +61,7 @@ submitting a pull request through GitHub. Please see CONTRIBUTING.md for more de
 License
 -------
 
-Copyright 2014 The Android Open Source Project, Inc.
+Copyright 2016 The Android Open Source Project, Inc.
 
 Licensed to the Apache Software Foundation (ASF) under one or more contributor
 license agreements.  See the NOTICE file distributed with this work for
