@@ -121,6 +121,15 @@ public class ActiveNotificationFragment extends Fragment {
         // [END create_notification]
         Log.i(TAG, "Add a notification");
 
+        updateNotifications();
+    }
+
+    /**
+     * Update notification information in the app and the notifications.
+     *
+     * Sets summaries and notification counts.
+     */
+    protected void updateNotifications() {
         updateNotificationSummary();
         updateNumberOfNotifications();
     }
@@ -133,13 +142,15 @@ public class ActiveNotificationFragment extends Fragment {
                 .getActiveNotifications();
 
         int numberOfNotifications = activeNotifications.length;
+        StatusBarNotification lastNotify = null;
         // Since the notifications might include a summary notification remove it from the count if
         // it is present.
         for (StatusBarNotification notification : activeNotifications) {
           if (notification.getId() == NOTIFICATION_GROUP_SUMMARY_ID) {
             numberOfNotifications--;
-            break;
+            continue;
           }
+          lastNotify = notification;
         }
 
         if (numberOfNotifications > 1) {
@@ -157,6 +168,9 @@ public class ActiveNotificationFragment extends Fragment {
         } else {
             // Remove the notification summary.
             mNotificationManager.cancel(NOTIFICATION_GROUP_SUMMARY_ID);
+            if (lastNotify != null) {
+                mNotificationManager.notify(lastNotify.getId(), lastNotify.getNotification());
+            }
         }
     }
 

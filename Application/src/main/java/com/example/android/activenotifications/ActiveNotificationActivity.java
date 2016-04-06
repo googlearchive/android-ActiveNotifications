@@ -36,7 +36,7 @@ public class ActiveNotificationActivity extends MainActivity {
             if (mFragment == null) {
                 findFragment();
             }
-            mFragment.updateNumberOfNotifications();
+            mFragment.updateNotifications();
         }
     };
 
