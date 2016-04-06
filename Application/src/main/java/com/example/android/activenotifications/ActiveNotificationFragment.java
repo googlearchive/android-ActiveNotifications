@@ -151,6 +151,7 @@ public class ActiveNotificationFragment extends Fragment {
                     .setStyle(new NotificationCompat.BigTextStyle()
                             .setSummaryText(notificationContent))
                     .setGroup(NOTIFICATION_GROUP)
+                    .setDeleteIntent(mDeletePendingIntent)
                     .setGroupSummary(true);
             final Notification notification = builder.build();
             mNotificationManager.notify(NOTIFICATION_GROUP_SUMMARY_ID, notification);
