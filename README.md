@@ -1,5 +1,5 @@
 
-Android ActiveNotification Sample
+Android ActiveNotifications Sample
 ===================================
 
 Notification Groups and the Notification Manager can be used together to simplify
@@ -17,8 +17,8 @@ Notifications can now be grouped.
 Starting with Android N, you can set notification groups for notifications
 and define a notification group summary.
 
-Starting with Android M, you can query it for the active notifications that
-your app sent using the [notify][2] methods.
+In Android M, you can query for the active notifications that your app sent 
+sing the [notify][2] methods.
 
 This sample demonstrates simple use of these features by allowing a user 
 to add notifications and then query how many notifications
@@ -32,7 +32,7 @@ Pre-requisites
 --------------
 
 - Android SDK Preview N
-- Android Build Tools v24.0.0 rc1
+- Android Build Tools v24.0.0 rc3
 - Android Support Repository
 
 Screenshots
@@ -53,7 +53,7 @@ Support
 - Stack Overflow: http://stackoverflow.com/questions/tagged/android
 
 If you've found an error in this sample, please file an issue:
-https://github.com/googlesamples/android-ActiveNotification
+https://github.com/googlesamples/android-ActiveNotifications
 
 Patches are encouraged, and may be submitted by forking this project and
 submitting a pull request through GitHub. Please see CONTRIBUTING.md for more details.

@@ -9,7 +9,7 @@ technologies: [Android]
 categories:   [Getting Started, Notification, Android N Preview]
 languages:    [Java]
 solutions:    [Mobile]
-github:       android-ActiveNotification
+github:       android-ActiveNotifications
 level:        INTERMEDIATE
 icon:         screenshots/icon-web.png
 apiRefs:
