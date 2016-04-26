@@ -32,7 +32,7 @@ Pre-requisites
 --------------
 
 - Android SDK Preview N
-- Android Build Tools v24.0.0 rc3
+- Android Build Tools v24.0.0 rc1
 - Android Support Repository
 
 Screenshots

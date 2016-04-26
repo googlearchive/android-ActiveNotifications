@@ -34,7 +34,7 @@ import com.example.android.common.logger.Log;
 /**
  * A fragment that allows notifications to be enqueued.
  */
-public class ActiveNotificationFragment extends Fragment {
+public class ActiveNotificationsFragment extends Fragment {
 
     /**
      * The request code can be any number as long as it doesn't match another request code used
@@ -42,7 +42,7 @@ public class ActiveNotificationFragment extends Fragment {
      */
     private static final int REQUEST_CODE = 2323;
 
-    private static final String TAG = "ActiveNotificationFragment";
+    private static final String TAG = "ActiveNotificationsFragment";
 
     private static final String NOTIFICATION_GROUP =
             "com.example.android.activenotifications.notification_type";
@@ -94,7 +94,7 @@ public class ActiveNotificationFragment extends Fragment {
 
         // [BEGIN create_pending_intent_for_deletion]
         // Create a PendingIntent to be fired upon deletion of a Notification.
-        Intent deleteIntent = new Intent(ActiveNotificationActivity.ACTION_NOTIFICATION_DELETE);
+        Intent deleteIntent = new Intent(ActiveNotificationsActivity.ACTION_NOTIFICATION_DELETE);
         mDeletePendingIntent = PendingIntent.getBroadcast(getActivity(),
                 REQUEST_CODE, deleteIntent, 0);
         // [END create_pending_intent_for_deletion]
