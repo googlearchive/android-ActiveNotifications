@@ -17,10 +17,10 @@ Notifications can now be grouped.
 Starting with Android N, you can set notification groups for notifications
 and define a notification group summary.
 
-In Android M, you can query for the active notifications that your app sent 
+In Android M, you can query for the active notifications that your app sent
 sing the [notify][2] methods.
 
-This sample demonstrates simple use of these features by allowing a user 
+This sample demonstrates simple use of these features by allowing a user
 to add notifications and then query how many notifications
 are currently being displayed via the [getActiveNotifications()][3] method.
 
@@ -31,8 +31,8 @@ are currently being displayed via the [getActiveNotifications()][3] method.
 Pre-requisites
 --------------
 
-- Android SDK Preview N
-- Android Build Tools v24.0.0 rc1
+- Android SDK 24
+- Android Build Tools v24.0.1
 - Android Support Repository
 
 Screenshots
