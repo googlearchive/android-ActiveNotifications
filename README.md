@@ -18,7 +18,7 @@ Starting with Android N, you can set notification groups for notifications
 and define a notification group summary.
 
 In Android M, you can query for the active notifications that your app sent
-sing the [notify][2] methods.
+using the [notify][2] methods.
 
 This sample demonstrates simple use of these features by allowing a user
 to add notifications and then query how many notifications
